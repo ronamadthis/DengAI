@@ -1,2 +1,4 @@
 # DengAI
 Analysis of Dengue Fever Data from drivendata.org
+A time series data on Dengue disease spread was provided. Since this competition requires prediction of the disease (number of cases) given many variables, this becomes Linear Regression problem instead of a time series problem. Hence, multivariate linear regression analysis was performed.The analysis gave a low regression correlation coefficients of 0.167 and 0.177 for training and testing data respectively. These values are rather low for a predictive model. Lasso and Ridge models did not improve on these values.
+A logarithmic conversion of labels (by adding 1 to all of them to prevent taking log of zero labels) was attempted after finding out that nearly 10% of the dependent variable values are zero making it difficult to drop these values. This increased correlation coefficient to >0.42.
